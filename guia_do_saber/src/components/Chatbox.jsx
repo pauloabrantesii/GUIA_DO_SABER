@@ -1,8 +1,7 @@
 import style from './Chatbox.module.css'
 import { useState } from "react";
 
-
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 
 export function ChatGPT() {
   const [inputValue, setInputValue] = useState("");
@@ -27,8 +26,8 @@ export function ChatGPT() {
       body: JSON.stringify({
         model: "text-davinci-003",
         prompt: sQuestion,
-        max_tokens: 2048, 
-        temperature: 0.5, 
+        max_tokens: 2048,
+        temperature: 0.5,
       }),
     })
       .then((response) => response.json())
@@ -61,17 +60,15 @@ export function ChatGPT() {
   return (
 
 
+    
     <div className="content">
-
-   
-
-      <textarea className={style.result} 
+      <textarea
+        className={style.result}
         id="result"
         rows="10"
         disabled
         value={resultValue}
         placeholder="Resposta do Tutor"
-        
       ></textarea>
 
       <textarea
@@ -81,8 +78,10 @@ export function ChatGPT() {
         onChange={(e) => setInputValue(e.target.value)}
         onKeyPress={handleKeyPress}
         disabled={inputValue === "Carregando..."}
-        
       ></textarea>
     </div>
   );
 }
+
+
+
