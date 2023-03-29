@@ -14,15 +14,23 @@ export function Home() {
 
   return (
     <div>
-      {!showChat &&
-     <a className={`${style.inicar} ${style.link}`} onClick={handleClick}>
-       <span className={style.start}>Iniciar</span>
-       <span className={style.tutor}>Tutor</span>
-       <span className={style.personalizado}>Personalizado</span>
-     </a>
+        {!showChat &&
+      <div className={`${style.inicar} ${style.link}`}>
+          <span className={style.start}> <strong>Guia</strong> </span>
+          <span className={style.tutor}><strong>do</strong> </span>
+          <span className={style.personalizado}> <strong>Saber</strong> </span>
+          <h2 className={style.subtitle}>Descubra o mundo do conhecimento!</h2>
+          <button className={style.journey} onClick={handleClick}><strong> Iniciar Jornada </strong> </button>
+       </div>
      }
+      
+    
+
+    
       {showChat && <ChatGPT />}
-      {showChat && <button className={`${style.exit} ${style.icon}`} onClick={() => setShowChat(false)}> <AiOutlineCloseCircle /> </button>}
+      {showChat && <button className={`${style.exit} ${style.icon}`} onClick={() => setShowChat(false)}> <AiOutlineCloseCircle /> Voltar ao Inicio </button>}
+    
     </div>
+    
   );
 }

@@ -1,13 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items:center;
   
-  body {
-    background-image: url(https://img.freepik.com/free-vector/abstract-memphis-fluid-background-with-geometric-shapes_1017-39057.jpg?w=2000&t=st=1679672680~exp=1679673280~hmac=c5e32b3a3da94fb98536544156ce01ec6e6e8d822c3bf27862cbfb3873e0ec88);
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-  }
+}
+
+body {
+  background-image: url(https://cdn.discordapp.com/attachments/1067564605389406249/1090080424300126239/69c9587a-1222-4594-a4ea-b893829e2883.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
